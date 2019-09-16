@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/backgroundcustomer.css') }}">
+      <h1>User Doesn't exist Please Signup</h1>
+  </head>
+  <body>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/backgroundcustomer.css') }}">
+    <form action="/signup" method="post" enctype="multipart/form-data">
+	  user id: <input type="text" name="userid"><br>
+	  password: <input type="text" name="password"><br>
+          First Name: <input type="text" name="firstname"><br>
+	  Last Name: <input type="text" name="lastname"><br>
+	  e-mail id: <input type="text" name="email"><br>
+	  Please upload your file here<br>(Allowed extentions: '.txt'): <input type="file" name="myFile"><br>
+      <button type="submit" name="action" value="insert">Submit</button>
+      <br> Response: {{output}}</br>
+    </form>
+  </body>
+</html>

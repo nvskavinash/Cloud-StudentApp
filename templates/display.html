@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/background3.css') }}">
+      <h1>User Details</h1>
+  </head>
+  <body>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/background3.css') }}">
+          First Name: {{output1}}<br>
+	  Last Name: {{output2}}<br>
+	  emial id: {{output3}}<br>
+	  Click here to download the text file:<a href="/download/{{path}}">Download</a><br>
+	  Path: {{path}}<br>
+	  Number of words in resume: {{output4}}</br>
+  </body>
+</html>
