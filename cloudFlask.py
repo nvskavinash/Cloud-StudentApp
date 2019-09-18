@@ -39,9 +39,11 @@ def method():
             print("Hi entered login")
             #try:
             print("Entered try")
-            conn = pyodbc.connect('Driver={ODBC Driver 13 for SQL Server};'
-                            'Server=DESKTOP-5S00P3V;'
+            conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+                            'Server=localhost;'
+                                  'PORT=1443;'
                             'Database=CLOUDPROJECT;'
+                                  'PWD=123@Avinash;'
                             'Trusted_Connection=yes;')
         
             cursor = conn.cursor()
@@ -88,9 +90,11 @@ def method():
                 
 @app.route('/signup', methods = ["GET", "POST"])
 def sub_method():
-    conn = pyodbc.connect('Driver={ODBC Driver 13 for SQL Server};'
-                            'Server=DESKTOP-5S00P3V;'
+    conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+                            'Server=localhost;'
+                                  'PORT=1443;'
                             'Database=CLOUDPROJECT;'
+                                  'PWD=123@Avinash;'
                             'Trusted_Connection=yes;')
     
     path = ""  
