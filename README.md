@@ -10,4 +10,6 @@
 # Sources
 https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017 
 https://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/
-https://github.com/Microsoft/mssql-docker/issues/448
+https://github.com/Microsoft/mssql-docker/issues/448 
+
+
