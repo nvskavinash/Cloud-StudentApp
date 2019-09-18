@@ -14,6 +14,7 @@ UPLOAD_FOLDER = '/home/ubuntu/flaskapp/upload'
 ALLOWED_EXTENSIONS = set(['txt', 'pdf'])
 
 app = Flask(__name__)
+app.config['SECRET_KEY']='nvsk123'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
