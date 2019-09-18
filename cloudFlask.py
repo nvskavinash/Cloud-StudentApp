@@ -167,4 +167,4 @@ def download(filename):
         
                       
 if __name__ == "__main__":
-    app.run()
+    app.run(host='ec2-18-219-182-215.us-east-2.compute.amazonaws.com', port=5000)
