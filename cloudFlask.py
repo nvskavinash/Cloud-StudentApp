@@ -10,7 +10,7 @@ from flask import send_file,send_from_directory
 s1 = ""
 s2 = ""
 
-UPLOAD_FOLDER = 'C:\\uc\\cloud\\Assignment\\upload'
+UPLOAD_FOLDER = '/home/ubuntu/flaskapp/upload'
 ALLOWED_EXTENSIONS = set(['txt', 'pdf'])
 
 app = Flask(__name__)
