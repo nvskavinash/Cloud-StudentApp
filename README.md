@@ -6,3 +6,8 @@
 5)If the user already exists in the database he would be directly shown his details along with a link to download his/her's uploaded file and the wordcount of that. <br>
 6)If the user entered wrong credentials, he/she would be displayed with invalid credentials. <br>
 7)Note that the file name is stored in our machine with the name "file_" appended with the username to avoid contradiction.<br>
+
+# Sources
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017 
+https://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/
+https://github.com/Microsoft/mssql-docker/issues/448
