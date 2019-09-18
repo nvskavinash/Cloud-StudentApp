@@ -3,7 +3,6 @@ import pyodbc
 import base64
 from werkzeug import secure_filename
 import os
-import textract, re
 from collections import Counter
 from flask import send_file,send_from_directory
 
@@ -40,12 +39,11 @@ def method():
             print("Hi entered login")
             #try:
             print("Entered try")
-            conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+           conn = pyodbc.connect('Driver={/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.4.so.1.1};'
                             'Server=localhost;'
-                                  'PORT=1443;'
-                            'Database=CLOUDPROJECT;'
+                            'UID=SA;'
                                   'PWD=123@Avinash;'
-                            'Trusted_Connection=yes;')
+                            'DATABASE=CLOUDPROJECT;')
         
             cursor = conn.cursor()
                 #cursor1 = conn.cursor()
@@ -91,12 +89,11 @@ def method():
                 
 @app.route('/signup', methods = ["GET", "POST"])
 def sub_method():
-    conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+   conn = pyodbc.connect('Driver={/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.4.so.1.1};'
                             'Server=localhost;'
-                                  'PORT=1443;'
-                            'Database=CLOUDPROJECT;'
+                            'UID=SA;'
                                   'PWD=123@Avinash;'
-                            'Trusted_Connection=yes;')
+                            'DATABASE=CLOUDPROJECT;')
     
     path = ""  
     wcount= 0
@@ -168,4 +165,5 @@ def download(filename):
         
                       
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0',debug=True)
+
