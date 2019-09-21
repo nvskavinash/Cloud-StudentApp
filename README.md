@@ -8,9 +8,9 @@
 7)Note that the file name is stored in our machine with the name "file_" appended with the username to avoid contradiction.<br>
 
 # Sources
-* https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017 
-* https://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/
-* https://github.com/Microsoft/mssql-docker/issues/448
++1) https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017 
++2) https://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/
++3) https://github.com/Microsoft/mssql-docker/issues/448
 
 
 
